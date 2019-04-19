@@ -56,6 +56,9 @@ function getGraphs(device, popup) {
         case 'Gas':
             txtUnit = 'm3';
             break;
+ case 'Electric':
+            txtUnit = 'Watt';
+            break;            
         case 'Energy':
         case 'kWh':
         case 'YouLess counter':
@@ -80,6 +83,11 @@ function getGraphs(device, popup) {
             txtUnit = 'Range';
             break;
         case 'Voltage':
+            txtUnit = 'V';
+            break;
+        case 'CM113, Electrisave':
+            txtUnit = 'A';
+            break;            
         case 'A/D':
             txtUnit = 'mV';
             break;
